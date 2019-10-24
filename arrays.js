@@ -22,9 +22,19 @@ let array = [];
 
 /** 3. smallestNItems */
 const smallestNItems = (items, n) => {
-	// Replace this with your code
+  let sortedItem = items.sort((a, b) => a - b);
+
+  let array = [];
+  for (let i = 0, i < sortedItem.length; i++) {
+
+    array.push(sortedItem[i])
+  }
+console.log(array)
+
+
 };
 
 
 printIndices(['a', 'b', 'c']);
 everyOtherItem([2, 6, 7, 8, 7]);
+smallestNItems([2, 6, 7, 8, 7, 37, 85, 0], 3)
