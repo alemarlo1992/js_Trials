@@ -1,16 +1,22 @@
 "use strict";
 
 
-/** 1. isHometown */
+const isHometown = (town) => {
+  if (town === 'San Francisco') {
+    return true
+  }else {
+    return false
+  }
 
-// Define your function here
+}
 
+const getFullName = (firstName, lastName) => {
+  return `${firstName} ${lastName}`;
 
-** 2. getFullName */
-
-// Define your function here
-
+}
 
 /** 3. calculateTotal */
 
-// Define your function here
+// Define your function here;
+isHometown('San Diego');
+getFullName('Erica', 'Alejandra')

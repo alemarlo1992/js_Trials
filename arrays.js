@@ -25,16 +25,18 @@ const smallestNItems = (items, n) => {
   let sortedItem = items.sort((a, b) => a - b);
 
   let array = [];
-  for (let i = 0, i < sortedItem.length; i++) {
+  for (let i = 0; i < n; i++) {
 
-    array.push(sortedItem[i])
+    array.push(sortedItem[i]);
+
   }
+// let new_array= array.slice(0, n); 
+// console.log(new_array)
 console.log(array)
-
 
 };
 
 
 printIndices(['a', 'b', 'c']);
 everyOtherItem([2, 6, 7, 8, 7]);
-smallestNItems([2, 6, 7, 8, 7, 37, 85, 0], 3)
+smallestNItems([2, 6, 7, 8, 7, 37, 85, 0], 5)
